@@ -71,7 +71,8 @@ public class UpdaterImplementation extends UpdaterBase {
     try {
       getUpdateFilesFromJarFile();
     } catch (Exception e) {
-      throw new RuntimeException(e);
+      // removed this because of start-up exception
+//      throw new RuntimeException(e);
     }
   }
 
